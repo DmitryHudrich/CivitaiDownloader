@@ -1,4 +1,6 @@
-﻿internal static class Extensions {
+﻿namespace CheckpointDownloader;
+
+internal static class Extensions {
     public static void OrThen(this Boolean v, Action action) {
         if (!v) {
             action();

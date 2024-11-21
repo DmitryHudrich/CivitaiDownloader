@@ -1,5 +1,7 @@
 ﻿using Error = (System.String name, System.String desc);
 
+namespace CheckpointDownloader;
+
 internal static class Errors {
     public static Error BadInput = (name: nameof(BadInput), desc: "Url is not recognized.");
     public static Error PathNotSpecified = (name: nameof(PathNotSpecified), desc: $"Specify FULL downloding path via {Constants.DownloadPathEnvName}");
