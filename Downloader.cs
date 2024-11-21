@@ -39,7 +39,7 @@ internal static class Downloader {
         CheckErrors();
 
         using var contentStream = await response.Content.ReadAsStreamAsync();
-        await SaveToFileWithProgressAsync(contentStream, "./privet-ot-detey-kubani.safetensors", contentLength!.Value);
+        await SaveToFileWithProgressAsync(contentStream, downloadingPath + "privet-ot-detey-kubani.safetensors", contentLength!.Value);
 
     }
 
